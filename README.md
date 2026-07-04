@@ -88,7 +88,3 @@ Add the skill entry to `registry.json` and optionally to a bundle.
 ## License
 
 MIT
-
----
-
-Docs cleaned using [Stop Slop](https://github.com/hardikpandya/stop-slop) style guidance.
