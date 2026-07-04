@@ -1,0 +1,22 @@
+[
+  {
+    "description": "Read a Python source file",
+    "input": {
+      "path": "src/main.py"
+    },
+    "expected_output": {
+      "content": "import sys\n\ndef main():\n    print('hello')\n\nif __name__ == '__main__':\n    main()\n",
+      "bytes_read": 78
+    }
+  },
+  {
+    "description": "Read a project README",
+    "input": {
+      "path": "README.md"
+    },
+    "expected_output": {
+      "content": "# My Project\n\nA small CLI tool.\n",
+      "bytes_read": 31
+    }
+  }
+]

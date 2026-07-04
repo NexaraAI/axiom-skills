@@ -1,0 +1,26 @@
+[
+  {
+    "description": "Check status of a clean repo",
+    "input": {
+      "repository_path": "/home/user/project"
+    },
+    "expected_output": {
+      "branch": "main",
+      "staged": [],
+      "unstaged": [],
+      "untracked": []
+    }
+  },
+  {
+    "description": "Check status with modified and new files",
+    "input": {
+      "repository_path": "C:\\Users\\dev\\app"
+    },
+    "expected_output": {
+      "branch": "feature/login",
+      "staged": ["src/auth.rs"],
+      "unstaged": ["src/main.rs"],
+      "untracked": ["notes.txt"]
+    }
+  }
+]

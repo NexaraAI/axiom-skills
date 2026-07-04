@@ -1,0 +1,24 @@
+[
+  {
+    "description": "Scan a Rust project",
+    "input": {
+      "workspace_root": "/home/user/my-project",
+      "ignore_patterns": ["target", "node_modules", ".git"]
+    },
+    "expected_output": {
+      "file_tree": ["Cargo.toml", "src/main.rs", "src/lib.rs", "README.md"],
+      "summary": "Rust project with 2 source files"
+    }
+  },
+  {
+    "description": "Scan a Python project",
+    "input": {
+      "workspace_root": "C:\\Users\\dev\\app",
+      "ignore_patterns": ["__pycache__", ".venv", ".git"]
+    },
+    "expected_output": {
+      "file_tree": ["pyproject.toml", "src/app/__init__.py", "src/app/main.py", "tests/test_main.py"],
+      "summary": "Python project with 3 source files and 1 test"
+    }
+  }
+]

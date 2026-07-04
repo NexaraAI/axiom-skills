@@ -1,0 +1,28 @@
+[
+  {
+    "description": "Fetch a JSON API endpoint",
+    "input": {
+      "url": "https://api.example.com/status",
+      "timeout_ms": 5000,
+      "max_bytes": 10240
+    },
+    "expected_output": {
+      "status": 200,
+      "text": "{\"status\":\"ok\",\"version\":\"1.2.3\"}",
+      "content_type": "application/json"
+    }
+  },
+  {
+    "description": "Fetch an HTML page",
+    "input": {
+      "url": "https://example.com",
+      "timeout_ms": 10000,
+      "max_bytes": 51200
+    },
+    "expected_output": {
+      "status": 200,
+      "text": "<!doctype html>\n<html>\n<head><title>Example</title></head>\n<body><p>Hello</p></body>\n</html>",
+      "content_type": "text/html"
+    }
+  }
+]

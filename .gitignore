@@ -1,0 +1,14 @@
+.env
+.env.*
+*.pem
+*.key
+id_rsa
+id_dsa
+credentials.json
+token.json
+*.log
+.DS_Store
+Thumbs.db
+node_modules/
+target/
+dist/

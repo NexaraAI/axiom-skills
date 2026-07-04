@@ -1,0 +1,11 @@
+id = "coding.python"
+name = "Python Coding Skills"
+description = "Skills for writing and running Python code."
+platforms = ["windows", "linux", "macos"]
+skills = [
+  "python.write",
+  "python.run",
+  "file.read",
+  "file.write",
+  "project.scan",
+]

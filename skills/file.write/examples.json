@@ -1,0 +1,26 @@
+[
+  {
+    "description": "Write a config file",
+    "input": {
+      "path": "config.toml",
+      "content": "[server]\nport = 8080\nhost = \"localhost\"\n",
+      "overwrite_confirmation": true
+    },
+    "expected_output": {
+      "written_path": "config.toml",
+      "bytes_written": 40
+    }
+  },
+  {
+    "description": "Create a new gitignore",
+    "input": {
+      "path": ".gitignore",
+      "content": "node_modules/\ndist/\n*.log\n",
+      "overwrite_confirmation": false
+    },
+    "expected_output": {
+      "written_path": ".gitignore",
+      "bytes_written": 27
+    }
+  }
+]

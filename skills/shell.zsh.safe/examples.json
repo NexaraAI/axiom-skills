@@ -1,0 +1,28 @@
+[
+  {
+    "description": "Show current working directory",
+    "input": {
+      "command": "pwd",
+      "working_directory": "/Users/dev/project",
+      "safety_level": "safe"
+    },
+    "expected_output": {
+      "exit_code": 0,
+      "stdout": "/Users/dev/project\n",
+      "stderr": ""
+    }
+  },
+  {
+    "description": "Count lines in source files",
+    "input": {
+      "command": "wc -l src/*.swift",
+      "working_directory": "/Users/dev/app",
+      "safety_level": "safe"
+    },
+    "expected_output": {
+      "exit_code": 0,
+      "stdout": "  42 src/main.swift\n 118 src/app.swift\n 160 total\n",
+      "stderr": ""
+    }
+  }
+]

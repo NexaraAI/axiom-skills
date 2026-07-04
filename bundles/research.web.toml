@@ -1,0 +1,9 @@
+id = "research.web"
+name = "Web Research Skills"
+description = "Skills for fetching and saving web content."
+platforms = ["windows", "linux", "macos"]
+skills = [
+  "web.fetch",
+  "file.read",
+  "file.write",
+]

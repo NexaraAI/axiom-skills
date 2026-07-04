@@ -1,0 +1,28 @@
+[
+  {
+    "description": "Run a Python script",
+    "input": {
+      "command": "python src/main.py",
+      "working_directory": "/home/user/project",
+      "safety_level": "safe"
+    },
+    "expected_output": {
+      "exit_code": 0,
+      "stdout": "Processing complete. 42 items handled.\n",
+      "stderr": ""
+    }
+  },
+  {
+    "description": "Run pytest on a test file",
+    "input": {
+      "command": "python -m pytest tests/test_utils.py -v",
+      "working_directory": "C:\\Users\\dev\\app",
+      "safety_level": "safe"
+    },
+    "expected_output": {
+      "exit_code": 0,
+      "stdout": "tests/test_utils.py::test_parse_input PASSED\ntests/test_utils.py::test_format_output PASSED\n2 passed in 0.12s\n",
+      "stderr": ""
+    }
+  }
+]

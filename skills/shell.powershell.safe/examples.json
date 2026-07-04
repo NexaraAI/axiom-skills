@@ -1,0 +1,28 @@
+[
+  {
+    "description": "List directory contents",
+    "input": {
+      "command": "Get-ChildItem -Name",
+      "working_directory": "C:\\Users\\dev\\project",
+      "safety_level": "safe"
+    },
+    "expected_output": {
+      "exit_code": 0,
+      "stdout": "src\ntests\nCargo.toml\nREADME.md\n",
+      "stderr": ""
+    }
+  },
+  {
+    "description": "Check installed Python version",
+    "input": {
+      "command": "python --version",
+      "working_directory": "C:\\Users\\dev",
+      "safety_level": "safe"
+    },
+    "expected_output": {
+      "exit_code": 0,
+      "stdout": "Python 3.12.1\n",
+      "stderr": ""
+    }
+  }
+]

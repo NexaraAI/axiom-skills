@@ -1,0 +1,10 @@
+id = "coding.node"
+name = "Node.js Coding Skills"
+description = "Skills for working with Node.js projects."
+platforms = ["windows", "linux", "macos"]
+skills = [
+  "file.read",
+  "file.write",
+  "project.scan",
+  "shell.bash.safe",
+]
