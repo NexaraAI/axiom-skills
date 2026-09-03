@@ -1,7 +1,7 @@
 id = "file.read"
 name = "Read Workspace File"
 version = "0.1.0"
-description = "Reads UTF-8 text from a file inside the active workspace."
+description = "Reads UTF-8 text from a file inside the active workspace. Use it to inspect code, configs, or docs before answering."
 category = "files"
 skill_type = "tool"
 risk_level = "low"
@@ -11,10 +11,11 @@ entrypoint = "builtin:file.read"
 author = "Axiom Agent"
 license = "MIT"
 min_axiom_version = "0.1.0"
+keywords = ["read", "open", "show", "inspect", "file", "summarize", "explain"]
 
 [llm_card]
 summary = "Read UTF-8 text files inside the active workspace."
-when_to_use = ["User asks to inspect a file", "User asks to read project text"]
+when_to_use = ["User asks to inspect a file", "User asks to read project text", "User asks to summarize or explain a file", "User asks what is inside a file"]
 input_contract = "path"
 output_contract = "content, bytes_read"
 token_budget = 180

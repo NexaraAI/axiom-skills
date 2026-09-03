@@ -1,20 +1,21 @@
 id = "shell.bash.safe"
 name = "Run Safe Bash"
 version = "0.1.0"
-description = "Runs allowlisted Bash commands with safety checks."
+description = "Guidance for safe Bash terminal tasks on Linux. High risk: commands ask for approval and stay inside the workspace."
 category = "shell"
-skill_type = "tool"
+skill_type = "prompt"
 risk_level = "high"
-permissions = ["shell_run"]
+permissions = []
 platforms = ["linux"]
-entrypoint = "builtin:shell.bash.safe"
+entrypoint = "prompt-only"
 author = "Axiom Agent"
 license = "MIT"
 min_axiom_version = "0.1.0"
+keywords = ["bash", "shell", "terminal", "command", "linux", "run"]
 
 [llm_card]
 summary = "Use safe Bash command execution for terminal tasks on Linux."
-when_to_use = ["User asks to run a command", "User asks to test or inspect via terminal"]
+when_to_use = ["User asks to run a Linux terminal command", "User asks to test or inspect via Bash"]
 input_contract = "command, working_directory, safety_level"
 output_contract = "exit_code, stdout, stderr"
 token_budget = 260

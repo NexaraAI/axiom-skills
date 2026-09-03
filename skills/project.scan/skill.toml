@@ -1,7 +1,7 @@
 id = "project.scan"
 name = "Scan Project"
 version = "0.1.0"
-description = "Scans a project tree while ignoring common generated directories."
+description = "Scans a project tree while ignoring generated folders (node_modules, target, .git). Start here for summarize, explain, or find-my-code questions."
 category = "project"
 skill_type = "tool"
 risk_level = "low"
@@ -11,10 +11,11 @@ entrypoint = "builtin:project.scan"
 author = "Axiom Agent"
 license = "MIT"
 min_axiom_version = "0.1.0"
+keywords = ["project", "workspace", "scan", "structure", "summarize", "explain", "overview", "list", "folder"]
 
 [llm_card]
 summary = "Inspect project structure without reading generated dependency folders."
-when_to_use = ["User asks about project layout", "User asks to find relevant files"]
+when_to_use = ["User asks about project layout", "User asks to find relevant files", "User asks to summarize or explain a project", "User asks what is in this folder"]
 input_contract = "workspace_root, ignore_patterns"
 output_contract = "file_tree, summary"
 token_budget = 200

@@ -1,95 +1,144 @@
 {
   "schema_version": "0.1",
   "name": "Axiom Skills Registry",
-  "updated_at": "2026-01-01T00:00:00Z",
+  "updated_at": "2026-09-03T00:00:00Z",
   "skills": [
     {
       "id": "file.read",
       "version": "0.1.0",
       "category": "filesystem",
-      "platforms": ["windows", "linux", "macos"],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
       "manifest_url": "skills/file.read/skill.toml",
-      "min_axiom_version": "0.1.0"
+      "min_axiom_version": "0.1.0",
+      "sha256": "9716ffdf63738eec81fdb9ce1114c88fe2e098c05f9bef6b85dfafc9678b8a0a"
     },
     {
       "id": "file.write",
       "version": "0.1.0",
       "category": "filesystem",
-      "platforms": ["windows", "linux", "macos"],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
       "manifest_url": "skills/file.write/skill.toml",
-      "min_axiom_version": "0.1.0"
+      "min_axiom_version": "0.1.0",
+      "sha256": "80262c2b252052e750ce58b3a203026fcd77dead8f53307c5e4fb66e7b4ffcc3"
     },
     {
       "id": "project.scan",
       "version": "0.1.0",
       "category": "project",
-      "platforms": ["windows", "linux", "macos"],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
       "manifest_url": "skills/project.scan/skill.toml",
-      "min_axiom_version": "0.1.0"
+      "min_axiom_version": "0.1.0",
+      "sha256": "6b8a38a34c8401f29ce76efc5c1155cc9c3552d8129fe14412326e9e4de61331"
     },
     {
       "id": "web.fetch",
       "version": "0.1.0",
       "category": "web",
-      "platforms": ["windows", "linux", "macos"],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
       "manifest_url": "skills/web.fetch/skill.toml",
-      "min_axiom_version": "0.1.0"
+      "min_axiom_version": "0.1.0",
+      "sha256": "0076416e2f87c3c9b2720ff8f1521970dab88f3aa073510db71a2492da564cd0"
     },
     {
       "id": "shell.powershell.safe",
       "version": "0.1.0",
       "category": "shell",
-      "platforms": ["windows"],
+      "platforms": [
+        "windows"
+      ],
       "manifest_url": "skills/shell.powershell.safe/skill.toml",
-      "min_axiom_version": "0.1.0"
+      "min_axiom_version": "0.1.0",
+      "sha256": "008ac999f3ec7b7471ad4152dfda56bb5188e580da601b396731df273dca9568"
     },
     {
       "id": "shell.bash.safe",
       "version": "0.1.0",
       "category": "shell",
-      "platforms": ["linux"],
+      "platforms": [
+        "linux"
+      ],
       "manifest_url": "skills/shell.bash.safe/skill.toml",
-      "min_axiom_version": "0.1.0"
+      "min_axiom_version": "0.1.0",
+      "sha256": "7e7ea35141ae6fd5b4a5ef33981e3b9f37d0cdddcb019e9d65b478e668c50d33"
     },
     {
       "id": "shell.zsh.safe",
       "version": "0.1.0",
       "category": "shell",
-      "platforms": ["macos"],
+      "platforms": [
+        "macos"
+      ],
       "manifest_url": "skills/shell.zsh.safe/skill.toml",
-      "min_axiom_version": "0.1.0"
+      "min_axiom_version": "0.1.0",
+      "sha256": "854e038d133ea02f3c90e129d9987b6234b299f4390541da2a315a3a7e15f556"
     },
     {
       "id": "git.status",
       "version": "0.1.0",
       "category": "git",
-      "platforms": ["windows", "linux", "macos"],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
       "manifest_url": "skills/git.status/skill.toml",
-      "min_axiom_version": "0.1.0"
+      "min_axiom_version": "0.1.0",
+      "sha256": "65da511d277a13502437d687951d4aa8a842ca4c1c643217c92a12fbdd4009e7"
     },
     {
       "id": "git.diff",
       "version": "0.1.0",
       "category": "git",
-      "platforms": ["windows", "linux", "macos"],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
       "manifest_url": "skills/git.diff/skill.toml",
-      "min_axiom_version": "0.1.0"
+      "min_axiom_version": "0.1.0",
+      "sha256": "7b1c93924de7a4b711a24cf5530a04ab001ce37a37bee153b9bb8497b5a0779e"
     },
     {
       "id": "python.write",
       "version": "0.1.0",
       "category": "coding",
-      "platforms": ["windows", "linux", "macos"],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
       "manifest_url": "skills/python.write/skill.toml",
-      "min_axiom_version": "0.1.0"
+      "min_axiom_version": "0.1.0",
+      "sha256": "d5968ba49b249881410f81e703e235d5764ebe3921beaabcd12a3e1ace03670b"
     },
     {
       "id": "python.run",
       "version": "0.1.0",
       "category": "coding",
-      "platforms": ["windows", "linux", "macos"],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
       "manifest_url": "skills/python.run/skill.toml",
-      "min_axiom_version": "0.1.0"
+      "min_axiom_version": "0.1.0",
+      "sha256": "8674ad08f8fd0c54691be076c6c10cc595c901db3bd4bbad6cd6ef1a5c303402"
     }
   ],
   "bundles": [
@@ -97,37 +146,43 @@
       "id": "essential.windows",
       "name": "Essential Windows Skills",
       "platform": "windows",
-      "bundle_url": "bundles/essential.windows.toml"
+      "bundle_url": "bundles/essential.windows.toml",
+      "sha256": "3f8901596730d1ec10d183ae242cb78f660fbac520833800ea3851e4e73449a0"
     },
     {
       "id": "essential.linux",
       "name": "Essential Linux Skills",
       "platform": "linux",
-      "bundle_url": "bundles/essential.linux.toml"
+      "bundle_url": "bundles/essential.linux.toml",
+      "sha256": "e2ae1cbcfdfa6d26a83144ad77769f0639d7cce3323dac78b884a5f4942b635b"
     },
     {
       "id": "essential.macos",
       "name": "Essential macOS Skills",
       "platform": "macos",
-      "bundle_url": "bundles/essential.macos.toml"
+      "bundle_url": "bundles/essential.macos.toml",
+      "sha256": "69c79ef44b00cce42435507d171ae624ba65fad0c839515aa2d6d4f584e1d45c"
     },
     {
       "id": "coding.python",
       "name": "Python Coding Skills",
       "platform": "all",
-      "bundle_url": "bundles/coding.python.toml"
+      "bundle_url": "bundles/coding.python.toml",
+      "sha256": "920846db5ce2ce7a9392a290bab199882bb4e143d129c58c2ae8da679c6d9078"
     },
     {
       "id": "coding.node",
       "name": "Node.js Coding Skills",
       "platform": "all",
-      "bundle_url": "bundles/coding.node.toml"
+      "bundle_url": "bundles/coding.node.toml",
+      "sha256": "0bcd225acc76f13b85a36d84ee7fd652a18cb89ae4fd4e7b905d9531b7cdc898"
     },
     {
       "id": "research.web",
       "name": "Web Research Skills",
       "platform": "all",
-      "bundle_url": "bundles/research.web.toml"
+      "bundle_url": "bundles/research.web.toml",
+      "sha256": "e36c938c5b795d6f3705d77bc580b6e53051a29eb029a24764270dabf3fd0bea"
     }
   ]
 }

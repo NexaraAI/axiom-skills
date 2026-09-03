@@ -1,7 +1,7 @@
 id = "git.diff"
 name = "Git Diff"
 version = "0.1.0"
-description = "Shows repository diffs safely."
+description = "Shows git diffs safely (staged or unstaged). Read-only, never commits or pushes."
 category = "git"
 skill_type = "tool"
 risk_level = "low"
@@ -11,10 +11,11 @@ entrypoint = "builtin:git.diff"
 author = "Axiom Agent"
 license = "MIT"
 min_axiom_version = "0.1.0"
+keywords = ["git", "diff", "changes", "review", "compare", "patch"]
 
 [llm_card]
 summary = "Inspect git diffs without modifying the repository."
-when_to_use = ["User asks for git diff", "User asks to review changes"]
+when_to_use = ["User asks for git diff", "User asks to review changes", "User asks what changed in a commit or branch"]
 input_contract = "repository_path, staged"
 output_contract = "diff"
 token_budget = 220

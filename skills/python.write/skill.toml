@@ -1,7 +1,7 @@
 id = "python.write"
 name = "Python Code Writer"
 version = "0.1.0"
-description = "Guides the LLM to write clean Python code with safe structure."
+description = "Guides the LLM to write clean, safe Python with structure, types, and tests. Guidance only; files are written via file.write after approval."
 category = "coding"
 skill_type = "prompt"
 risk_level = "low"
@@ -11,6 +11,7 @@ entrypoint = "prompt-only"
 author = "Axiom Agent"
 license = "MIT"
 min_axiom_version = "0.1.0"
+keywords = ["python", "code", "script", "debug", "refactor", "pytest", "function"]
 
 [llm_card]
 summary = "Use this when the user asks to write, explain, or modify Python code."
@@ -18,6 +19,7 @@ when_to_use = [
   "User asks for Python code",
   "User asks to debug a Python snippet",
   "User asks to create a Python script",
+  "User asks to refactor or explain Python code",
 ]
 input_contract = "task, constraints, target_python_version"
 output_contract = "code, explanation, safety_notes"

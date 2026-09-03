@@ -1,7 +1,7 @@
 id = "git.status"
 name = "Git Status"
 version = "0.1.0"
-description = "Shows repository status safely."
+description = "Shows git working-tree status safely (branch, staged, unstaged, untracked). Read-only, never commits."
 category = "git"
 skill_type = "tool"
 risk_level = "low"
@@ -11,10 +11,11 @@ entrypoint = "builtin:git.status"
 author = "Axiom Agent"
 license = "MIT"
 min_axiom_version = "0.1.0"
+keywords = ["git", "status", "changed", "branch", "staged", "untracked"]
 
 [llm_card]
 summary = "Inspect git working tree status without changing files."
-when_to_use = ["User asks for git status", "User asks what changed"]
+when_to_use = ["User asks for git status", "User asks what changed", "User asks which files are modified"]
 input_contract = "repository_path"
 output_contract = "branch, staged, unstaged, untracked"
 token_budget = 180
