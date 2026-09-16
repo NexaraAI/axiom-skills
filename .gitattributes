@@ -1,0 +1,9 @@
+# Registry manifests are checksummed in registry.json by their exact bytes.
+# Skill/bundle pins are computed over LF content (the git blob), so this
+# repository must check out LF everywhere: a CRLF working copy (the default on
+# Windows with core.autocrlf=true) would fail verify_sha256 for every skill
+# during `axiom skill install --from-local-registry`.
+* text=auto eol=lf
+*.toml text eol=lf
+*.json text eol=lf
+*.md text eol=lf
