@@ -1,6 +1,6 @@
 id = "file.write"
 name = "Write Workspace File"
-version = "0.1.0"
+version = "0.2.0"
 description = "Writes UTF-8 text to a file inside the active workspace. Asks for approval first; never touches files outside the workspace."
 category = "files"
 skill_type = "tool"
@@ -12,6 +12,9 @@ author = "Axiom Agent"
 license = "MIT"
 min_axiom_version = "0.1.0"
 keywords = ["write", "save", "create", "edit", "update", "file"]
+
+[hooks]
+post = "lint.check"
 
 [llm_card]
 summary = "Write or save text files inside the active workspace."

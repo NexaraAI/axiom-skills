@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1",
   "name": "Axiom Skills Registry",
-  "updated_at": "2026-09-03T00:00:00Z",
+  "updated_at": "2026-09-17T00:00:00Z",
   "skills": [
     {
       "id": "file.read",
@@ -18,7 +18,7 @@
     },
     {
       "id": "file.write",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "category": "filesystem",
       "platforms": [
         "windows",
@@ -27,7 +27,7 @@
       ],
       "manifest_url": "skills/file.write/skill.toml",
       "min_axiom_version": "0.1.0",
-      "sha256": "80262c2b252052e750ce58b3a203026fcd77dead8f53307c5e4fb66e7b4ffcc3"
+      "sha256": "c381e4ff93611642b29066159e0a1e7599971c9995ba60c16bad024956b461e7"
     },
     {
       "id": "project.scan",
@@ -139,6 +139,19 @@
       "manifest_url": "skills/python.run/skill.toml",
       "min_axiom_version": "0.1.0",
       "sha256": "8674ad08f8fd0c54691be076c6c10cc595c901db3bd4bbad6cd6ef1a5c303402"
+    },
+    {
+      "id": "lint.check",
+      "version": "0.1.0",
+      "category": "filesystem",
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "manifest_url": "skills/lint.check/skill.toml",
+      "min_axiom_version": "0.1.0",
+      "sha256": "2396b1e460f54b542db5989e4de694f52bd22e1f36703ba97f4cccc12b452757"
     }
   ],
   "bundles": [

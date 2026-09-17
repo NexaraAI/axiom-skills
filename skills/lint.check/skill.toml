@@ -1,0 +1,21 @@
+id = "lint.check"
+name = "Lint Written File"
+version = "0.1.0"
+description = "Read-only lint pass over a workspace file. Ships as a builtin executor and is designed to run as a post-write manifest hook on file.write; it reports line-length, trailing-whitespace, tab, and TODO-format findings without ever modifying the file."
+category = "filesystem"
+skill_type = "tool"
+risk_level = "low"
+permissions = ["file_system_read"]
+platforms = ["windows", "linux", "macos"]
+entrypoint = "builtin:lint.check"
+author = "Axiom Agent"
+license = "MIT"
+min_axiom_version = "0.1.0"
+keywords = ["lint", "hook", "check", "quality", "file"]
+
+[llm_card]
+summary = "Lints a written file and reports style findings; runs automatically after file.write when installed as a hook."
+when_to_use = ["Runs automatically after a file write when wired as a post hook", "User asks to check a file for style issues"]
+input_contract = "path (plus any extra arguments passed through by the triggering tool)"
+output_contract = "path, findings, truncated, status"
+token_budget = 180

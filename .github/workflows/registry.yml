@@ -1,0 +1,30 @@
+name: Registry Integrity
+
+on:
+  push:
+    paths:
+      - 'registry.json'
+      - 'skills/**'
+      - 'bundles/**'
+      - 'scripts/verify_registry.py'
+      - '.github/workflows/registry.yml'
+  pull_request:
+    paths:
+      - 'registry.json'
+      - 'skills/**'
+      - 'bundles/**'
+      - 'scripts/verify_registry.py'
+      - '.github/workflows/registry.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Verify every sha256 pin matches on-disk bytes
+        run: python3 scripts/verify_registry.py
